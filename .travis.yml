@@ -1,0 +1,14 @@
+env:
+  - RAILS_VERSION=4.2.4
+  - RAILS_VERSION=4.2.4 USE_TURBOLINKS=true
+  - RAILS_VERSION=master
+
+rvm:
+ - 2.2.1
+ - jruby-19mode
+
+
+matrix:
+  allow_failures:
+    - env: "RAILS_VERSION=master"
+    - rvm: ruby-head

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <% if ENV['USE_TURBOLINKS'] %>
+    <%= javascript_include_tag 'application_turbolinks', "data-turbolinks-track" => true %>
+  <% else %>
+    <%= javascript_include_tag 'application', "data-turbolinks-track" => false %>
+  <% end %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
