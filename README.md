@@ -3,6 +3,18 @@ sweet-alert2-rails
 
 This library easily integrates the SweetAlert 2 library into a Rails application.
 
+Using the same Rails markup :
+
+```Ruby
+  = link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure you want to delete this item?' }
+```
+
+You go from:
+![Before](https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/before.png?raw=true)
+
+To:
+![After](https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/after.png?raw=true)
+
 It is heavily based on the work from Moises Viloria with SweetAlert. Some cleaning and refactoring were made to make it compatible with SweetAlert 2.
 
 It replaces the browser confirm dialog when using `data: { confirm: 'message' }` with the link_to helper with a nice looking sweet alert.
