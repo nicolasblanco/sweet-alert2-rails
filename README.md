@@ -10,10 +10,12 @@ Using the same Rails markup :
 ```
 
 You go from:
-![Before](https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/before.png?raw=true)
+
+<img src="https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/before.png?raw=true" width="500" alt="before" />
 
 To:
-![After](https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/after.png?raw=true)
+
+<img src="https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/after.png?raw=true" width="500" alt="after" />
 
 It is heavily based on the work from Moises Viloria with SweetAlert. Some cleaning and refactoring were made to make it compatible with SweetAlert 2.
 
