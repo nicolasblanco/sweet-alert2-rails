@@ -1,6 +1,8 @@
 sweet-alert2-rails
 ==================
 
+[![Build Status](https://travis-ci.org/nicolasblanco/sweet-alert2-rails.svg?branch=master)](https://travis-ci.org/nicolasblanco/sweet-alert2-rails)
+
 This library easily integrates the SweetAlert 2 library into a Rails application.
 
 Using the same Rails markup :
