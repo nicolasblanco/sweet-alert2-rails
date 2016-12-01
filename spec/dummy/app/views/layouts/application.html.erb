@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Dummy</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <% if ENV['USE_TURBOLINKS'] %>
-    <%= javascript_include_tag 'application_turbolinks', "data-turbolinks-track" => true %>
-  <% else %>
-    <%= javascript_include_tag 'application', "data-turbolinks-track" => false %>
-  <% end %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>TestSweet</title>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.auto.js' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-</body>
+  <body>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
+    
+    <%= yield %>
+  </body>
 </html>
