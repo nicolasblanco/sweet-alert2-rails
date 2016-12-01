@@ -5,19 +5,15 @@ sweet-alert2-rails
 
 This library easily integrates the SweetAlert 2 library into a Rails application.
 
+It replaces the boring standard JavaScript alert boxes with nice looking and animated ones.
+
+<img src="https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/sweet_alert.png?raw=true" width="800" alt="before" />
+
 Using the same Rails markup :
 
 ```Ruby
   = link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure you want to delete this item?' }
 ```
-
-You go from:
-
-<img src="https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/before.png?raw=true" width="500" alt="before" />
-
-To:
-
-<img src="https://github.com/nicolasblanco/sweet-alert2-rails/blob/master/doc/after.png?raw=true" width="500" alt="after" />
 
 It is heavily based on the work from Moises Viloria with SweetAlert. Some cleaning and refactoring were made to make it compatible with SweetAlert 2.
 
