@@ -38,6 +38,10 @@ Add the following to application.js:
 //= require sweetalert2
 //= require sweet-alert2-rails
 ```
+
+Note : if you're using Rails >= 5.1, you need to inject before this plugin `jquery` and `jquery-ujs` because they are not dependencies anymore. Read https://github.com/rails/jquery-rails#installation for more information.
+
+
 Add the following to application.css:
 
 ```css
