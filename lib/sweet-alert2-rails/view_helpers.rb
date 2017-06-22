@@ -33,7 +33,7 @@ module SweetAlert2Rails
     protected
 
     def options_has_confirm?(options)
-      options[:data] && options[:data][:confirm]
+      options.is_a?(Hash) && options[:data] && options[:data][:confirm]
     end
   end
 end
